@@ -6,7 +6,7 @@ const TodoList = ({ todolist, deleteHandler }) => {
         <div >
             {todolist.map((todo, index) =>
                 <div key={index} className="dis">
-                    <input type="checkbox" /> &nbsp;<h5>{todo} &nbsp; <button onClick={() => deleteHandler(index)}>Delete</button></h5>
+                    <h5><input type="checkbox" /> &nbsp;{todo} &nbsp; <button onClick={() => deleteHandler(index)}>Delete</button></h5>
                 </div>)}
         </div>
     );
